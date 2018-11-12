@@ -85,7 +85,7 @@ export default {
 
 <style scoped lang="scss">
 .sigin-config {
-  .course-info {
+   .course-info {
     height: 40px;
     line-height: 40px;
     border-bottom: 1px solid $borderColor;
