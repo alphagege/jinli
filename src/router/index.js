@@ -84,6 +84,16 @@ export default new Router({
             title: '结业证书',
             icon: 'table'
           }
+        },
+        {
+          path: 'chapterdetail',
+          name: 'ChapterDetail',
+          component: () => import('@/views/coursemanage/ChapterDetail'),
+          hidden:true,
+          meta: {
+            title: '章节详情',
+            icon: 'table'
+          }
         }
       ]
     },

@@ -77,7 +77,7 @@
       <el-tab-pane label="章节详情" name="second" class="second-tablepane">
         <el-row :gutter="12">
           <el-col :xs="24" :sm="24" :md="12" :lg="8" :xl="8">
-            <el-card shadow="hover">
+            <el-card shadow="hover" @click.native="jumpCaptureDetail()">
               <div>
                 <img src="https://n1image.hjfile.cn/hjclass/public/upload/201707/87eb5a10-8949-44a1-a7b5-a83d56648879.jpg" alt="">
               </div>
@@ -131,6 +131,10 @@
     methods:{
        handleClick(tab, event) {
         console.log(tab, event);
+      },
+      //跳转章节详情
+      jumpCaptureDetail(){
+        this.$router.push("/coursemanage/ChapterDetail")
       }
     }
   }
@@ -187,6 +191,7 @@
         }
         .course-text{
           .course-capture{
+            
             color:#666;
             font-weight:bold;
             margin-bottom: 10px;
@@ -196,6 +201,16 @@
             padding-left:10px;
           }
         }
+      }
+      /deep/ .el-card__body:hover{
+
+        .course-capture{
+            transition:all .3s;
+            color:#F01414;
+            font-weight:bold;
+            margin-bottom: 10px;
+            
+          }
       }
     }
   }
