@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import audioJson from "./ChapterDetail.js";
+import audioJson from "./Chapter.js";
 import videoPlay from '@/components/Video/video.vue'
 export default {
   data() {
